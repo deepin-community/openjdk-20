@@ -1,0 +1,15 @@
+Test-Command: java --version
+Depends: openjdk-20-jre-headless
+Restrictions: superficial
+
+Test-Command: javac --version
+Depends: openjdk-20-jdk-headless
+Restrictions: superficial
+
+#Tests: hotspot, jaxp, langtools
+#Depends: @, jtreg7:native (>= 7.1.1+1~), libtestng7-java:native, build-essential
+#Restrictions: allow-stderr, skippable, flaky
+
+#Tests: jdk
+#Depends: @, jtreg7:native (>= 7.1.1+1~), libtestng7-java:native, build-essential, xfwm4:native, xvfb, dbus-x11
+#Restrictions: allow-stderr, skippable, flaky
